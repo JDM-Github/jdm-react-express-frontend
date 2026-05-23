@@ -11,4 +11,8 @@ export default defineConfig({
 			"@/lib": path.resolve(__dirname, "./src/lib")
 		},
 	},
+	build: {
+		outDir: path.resolve(__dirname, "../backend/client"),
+		emptyOutDir: true,
+	},
 });

@@ -7,9 +7,7 @@ export default class RequestHandler {
 			? (import.meta.env.VITE_DEVELOPMENT_URL ?? "http://localhost:") + RequestHandler.port
 			: RequestHandler.mode === "production"
 				? (import.meta.env.VITE_PRODUCTION_URL ?? "http://localhost:") + RequestHandler.port
-				: RequestHandler.mode === "deployed"
-					? import.meta.env.VITE_DEPLOYED_URL ?? ""
-					: "http://localhost:3000").trim()
+				: "").trim()
 
 	static apiLink = "api"
 
